@@ -1,3 +1,5 @@
+![Audi A3 MHI2 RVC fillscreen backup camera](./_preview/Audi-MHI2-RVC-fullscreen_preview.jpg)
+
 # Audi MHI2 RVC fullscreen (Audi-MHI2-RVC-fullscreen)
 Audi MIB2 MMI (MHI2) rear-view camera modification for fullscreen stream display
 
