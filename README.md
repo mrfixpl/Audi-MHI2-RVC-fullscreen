@@ -3,9 +3,13 @@
 # Audi MHI2 RVC fullscreen (Audi-MHI2-RVC-fullscreen)
 Audi MIB2 MMI (MHI2) rear-view camera modification for fullscreen stream display
 
-Replace `displaymanager.json`, .png assets and .kzb assets to change video stream and  update GUI.
+Replace `displaymanager.json`, `.png` textures and `.kzb` assets to change video stream and  update GUI.
 
 Full details: http://wiki.mib-helper.com/index.php?title=Audi_MHI2_RVC_fullscreen_patch
+
+## Supported Vehicles ##
+* Audi A3/S3/RS3 (8V) with MHI2 system running firmware `MHI2_ER_AU37x_P5089`.
+* Need support for other cars and want to help develop the mod? Post stock files and display picture with stock config.
 
 ## Procedure
 * download assets from this repository
