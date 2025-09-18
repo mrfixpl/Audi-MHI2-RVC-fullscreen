@@ -21,7 +21,7 @@ Full details: http://wiki.mib-helper.com/index.php?title=Audi_MHI2_RVC_fullscree
 * Not for commecrial use - if you bought this, you got ripped off!
 * Use at your own risk.
 * Create backups before doing anything.
-* Developed and tested with MHI2_ER_AU37x_P5089
+* Developed and tested with `MHI2_ER_AU37x_P5089`
 
 ## Most important commands
 * `ssh root@10.173.189.1` - connect with MIB2 at 10.173.189.1 IP address (WLAN hotspot)
