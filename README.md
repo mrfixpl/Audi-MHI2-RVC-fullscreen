@@ -17,6 +17,9 @@ Full details: http://wiki.mib-helper.com/index.php?title=Audi_MHI2_RVC_fullscree
 * reboot the unit
 * check if it works and enjoy!
 
+## Demo
+https://www.youtube.com/watch?v=rX6YoU1oB2w
+
 ## Important
 * Not for commecrial use - if you bought this, you got ripped off!
 * Use at your own risk.
