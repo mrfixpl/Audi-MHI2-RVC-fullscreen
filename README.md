@@ -33,3 +33,6 @@ https://www.youtube.com/watch?v=rX6YoU1oB2w
 * `mount -uw /net/mmx/mnt/app && mount -uw /net/mmx/mnt/system` - enable write filesystem
 * `mount -ur /net/mmx/mnt/app && mount -ur /net/mmx/mnt/system` - go back to read-only filesystem
 * `exit` - log out from MIB
+
+## Too good to be free?
+Coffee-powered development ☕ BuyCoffee → https://buycoffee.to/mrfix
