@@ -105,26 +105,26 @@
 		#	"saturation": integer representing the saturation value
 		#	"hue": integer representing the hue value
 
-  # Audi MHI2 fullscreen RVC image mod
-  # Details: Not for commecrial use - if you bought this, you got ripped off!
-  # Use at your own risk.
-  # Developed and tested with MHI2_ER_AU37x_P5089
-  # Full details: http://wiki.mib-helper.com/index.php?title=Audi_MHI2_RVC_fullscreen_patch
+		# Audi MHI2 fullscreen RVC image mod
+		# Details: Not for commecrial use - if you bought this, you got ripped off!
+		# Use at your own risk.
+		# Developed and tested with MHI2_ER_AU37x_P5089
+		# Full details: http://wiki.mib-helper.com/index.php?title=Audi_MHI2_RVC_fullscreen_patch
 
 		"rvc" : {
 			"norm" : "AUTO",
 			"deinterlace" : "WEAVE",
 			"source":{
-    "x": 0,
-    "y": 0,
-    "w": 720,
-    "h": 480
+				"x": 0,
+				"y": 0,
+				"w": 720,
+				"h": 480
 			},
 			"target":{
-    "x": 0,
-    "y": 0,
-    "w": 800,
-    "h": 438
+				"x": 0,
+				"y": 0,
+				"w": 800,
+				"h": 438
 			},
 			"brightness": 0,
 			"color": 0,
