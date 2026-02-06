@@ -1,0 +1,168 @@
+{
+	#this block is always evaluated by the displaymanager.
+	"default" : {
+	
+	    "use_ecc_annotations" : true,
+			
+		#this block contains all the terminals (= LVDS outputs)
+		#the displaymanager will use for rendering
+		
+		"terminals" : [
+	
+			#a single terminal is defined like this:
+			#   "name": the internal name
+			#   "terminal": the driver's name for the terminal
+			#   "mode" : "normal" or "multiplexing" (optional) in multiplexing mode the displaymanager will multiplex the displays on this terminal
+			
+			{
+				"name" : "LVDS1",
+				"terminal" : "PLN-8721-283-2009-34"
+			}
+			,{
+				"name" : "LVDS2",
+				"terminal" : "INTERNAL1"
+			}
+
+		],
+		
+		# this block contains all displays the manager will use for rendering
+		# in most cases (including the productive system) there will be a 1-to-1 mapping
+		# between terminals and displays
+		# for engineering purposes, it might be useful to have several displays on one terminal
+		
+		"displays" : [
+		
+			#a single display is defined like this:
+			#	"name": internal name
+			#	"terminal": the terminal's internal name this display represents
+			#	"id": the display's ID	
+			#   "x" : the x position in pixels of the display's top left corner (optional)
+			#   "y" : the y position in pixels of the display's top left corner (optional)
+			#   "width" : the display's width in pixels (optional - only used when using scaling - seee scale_mode)
+			#   "height" : the display's height in pixels (optional - only used when using scaling - seee scale_mode)
+			#   "scale_mode" : "none" | "free" | "keep_aspect" (optional)
+			#   "annotated" : true | false (optional)
+			#   "optional" : true | false (optional, default: false)
+			
+			{
+				"id" : 0,
+				"name" : "Main Display",
+				"terminal" : "LVDS1"
+			}
+			,{
+				"id" : 4,
+				"name" : "Cluster Display",
+				"terminal" : "LVDS2",
+				"annotated" : true,
+                "optional" : true
+			}	
+		],
+		
+		"displayables" : [
+		
+		  {   
+              # KDK
+		      "id" : 20,
+		      "annotation" : {
+    		      "source" : {
+        		      "x" : 0,
+        		      "width" : 100,
+        		      "height" : 1
+    		      },
+                  "target" : {
+                      "x" : 1000,
+                      "y" : 540
+                  }
+              }
+		  }
+		],
+		
+        #this block configures the RVC
+        #   "norm": the norm to use, "AUTO", "NTSC_443", "NTSC_M", "PAL"
+        #   "deinterlace": the deinterlace mode "WEAVE", "BOB"
+        #   "source": x,y,w,h
+        #   "target": x,y,w,h 
+        #   "brightness": integer representing the brightness value
+        #   "color": integer representing the color value
+        #   "saturation": integer representing the saturation value
+        #   "hue": integer representing the hue value
+		"rvc" : {
+            "norm" : "AUTO",
+            "deinterlace" : "WEAVE",
+            "source":{
+                "x": 0,
+                "y": 48,
+                "w": 702,
+                "h": 384
+            },
+            "target":{
+                "x": 0,
+                "y": 56,
+                "w": 720,
+                "h": 384
+            },
+            "brightness": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "hue": 0
+		},
+		
+        #this block configures the TopView
+        #   "deinterlace": the deinterlace mode "WEAVE", "BOB"
+        #   "source": x,y,w,h
+        #   "target": x,y,w,h 
+		"zfas" : {
+            "deinterlace" : "BOB",
+            "source":{
+                "x": 0,
+                "y": 0,
+                "w": 1024,
+                "h": 480
+            },
+            "target":{
+                "x": 0,
+                "y": 0,
+                "w": 1024,
+                "h": 480
+            },
+            "brightness": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "hue": 0
+		}
+                
+	},
+	
+	"hbprod" : {
+        "displays" : [
+        
+            {
+                "id" : 0,
+                "name" : "Main Display",
+                "terminal" : "LVDS1"
+            }
+            ,{
+                "id" : 4,
+                "name" : "Cluster Display",
+                "terminal" : "LVDS2"
+            }   
+        ]
+	},
+	
+    "hbtest" : {
+        "displays" : [
+        
+            {
+                "id" : 0,
+                "name" : "Main Display",
+                "terminal" : "LVDS1"
+            }
+            ,{
+                "id" : 4,
+                "name" : "Cluster Display",
+                "terminal" : "LVDS2"
+            }   
+        ]
+    }
+}
+
